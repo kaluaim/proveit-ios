@@ -21,6 +21,7 @@
         NSLog(@"--------------> user singed in: %@", user.email);
         // go to landing page
         _logoutButton.hidden = NO;
+        [self dismissModalStack];
     } else {
         // No user is signed in.
         NSLog(@"----------------> no user logeding");
@@ -42,6 +43,7 @@
         if (error == nil) {
             NSLog(@"=========> user logedin: %@", user.email);
             _logoutButton.hidden = NO;
+            [self dismissModalStack];
         } else {
             UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];
             UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
@@ -51,9 +53,14 @@
     }];
 }
 
-- (IBAction)doLogout {
-    [[FIRAuth auth] signOut:nil];
-    _logoutButton.hidden = YES;
-}
 
+
+
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

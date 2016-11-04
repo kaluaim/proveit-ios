@@ -16,6 +16,7 @@
     if (user != nil) {
         // User is signed in.
         NSLog(@"--------------> user singed in: %@", user.email);
+        [self dismissModalStack];
         // go to landing page
     } else {
         // No user is signed in.
@@ -30,6 +31,7 @@
     [[FIRAuth auth] createUserWithEmail:_emailField.text password:_passwordField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
         if (error == nil) {
             NSLog(@"=========> user created: %@", user.email);
+            [self dismissModalStack];
         } else {
             UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];
             UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
@@ -39,5 +41,13 @@
         
     }];
     
+}
+
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
 }
 @end

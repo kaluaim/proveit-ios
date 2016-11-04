@@ -14,6 +14,13 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    
     [super viewWillAppear:YES];
     // to get currently signed in user
     FIRUser *user = [FIRAuth auth].currentUser;
@@ -22,10 +29,11 @@
         // User is signed in.
         NSLog(@"--------------> user singed in: %@", user.email);
         // go to landing page
+        [self performSegueWithIdentifier:@"toProveit" sender:nil];
     } else {
         // No user is signed in.
         NSLog(@"----------------> no user logeding");
+        [self performSegueWithIdentifier:@"toLogin" sender:nil];
     }
-    
 }
 @end

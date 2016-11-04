@@ -17,6 +17,7 @@
 		FA9119E81DC5A08600CBC6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9119E71DC5A08600CBC6DD /* Assets.xcassets */; };
 		FA9119EB1DC5A08600CBC6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9119E91DC5A08600CBC6DD /* LaunchScreen.storyboard */; };
 		FA9119F31DC5A0E900CBC6DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */; };
+		FA9B343A1DCC570200CEEDE6 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34391DCC570200CEEDE6 /* SettingsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		FA9119EA1DC5A08600CBC6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9119EC1DC5A08600CBC6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA9B34381DCC570200CEEDE6 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		FA9B34391DCC570200CEEDE6 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		FAB1BAAD1DC5A4A000EA5319 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,6 +97,8 @@
 			children = (
 				FA9119DE1DC5A08600CBC6DD /* AppDelegate.h */,
 				FA9119DF1DC5A08600CBC6DD /* AppDelegate.m */,
+				FA659B991DC9BDA700D92E7D /* LaunchVC.h */,
+				FA659B9A1DC9BDA700D92E7D /* LaunchVC.m */,
 				FA9119E11DC5A08600CBC6DD /* LoginVC.h */,
 				FA9119E21DC5A08600CBC6DD /* LoginVC.m */,
 				FA659B961DC96D3400D92E7D /* RegisterVC.h */,
@@ -104,8 +109,8 @@
 				FA9119EC1DC5A08600CBC6DD /* Info.plist */,
 				FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */,
 				FA9119DB1DC5A08600CBC6DD /* Supporting Files */,
-				FA659B991DC9BDA700D92E7D /* LaunchVC.h */,
-				FA659B9A1DC9BDA700D92E7D /* LaunchVC.m */,
+				FA9B34381DCC570200CEEDE6 /* SettingsVC.h */,
+				FA9B34391DCC570200CEEDE6 /* SettingsVC.m */,
 			);
 			path = proveit;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				FA9119E01DC5A08600CBC6DD /* AppDelegate.m in Sources */,
 				FA9119DD1DC5A08600CBC6DD /* main.m in Sources */,
 				FA659B9B1DC9BDA700D92E7D /* LaunchVC.m in Sources */,
+				FA9B343A1DCC570200CEEDE6 /* SettingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -337,6 +344,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
