@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>742777772311-sad9t51rfb53e91bmdqgeo7j603gjmf7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.742777772311-sad9t51rfb53e91bmdqgeo7j603gjmf7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4UGeHrfQ6cm2hxXm84bC6rPRUVRhpZ8c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>742777772311</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kaluaim.proveit</string>
+	<key>PROJECT_ID</key>
+	<string>proveit-83e0f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>proveit-83e0f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:742777772311:ios:59e57ece20f7e7e2</string>
+	<key>DATABASE_URL</key>
+	<string>https://proveit-83e0f.firebaseio.com</string>
+</dict>
+</plist>
