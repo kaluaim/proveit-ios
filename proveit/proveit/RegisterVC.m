@@ -2,7 +2,7 @@
 @import Firebase;
 
 @interface RegisterVC ()
-
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 @end
 
 @implementation RegisterVC
@@ -12,6 +12,7 @@
     
     // to get currently signed in user
     FIRUser *user = [FIRAuth auth].currentUser;
+    _ref = [[FIRDatabase database] reference];
     
     if (user != nil) {
         // User is signed in.
@@ -31,6 +32,31 @@
     [[FIRAuth auth] createUserWithEmail:_emailField.text password:_passwordField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
         if (error == nil) {
             NSLog(@"=========> user created: %@", user.email);
+            
+
+            // add user info to db
+            [[[_ref child:@"users"] child:user.uid] setValue:@{@"email": user.email,
+                                                               @"username": @"",
+                                                               @"display-name": @"",
+                                                               @"date-created": [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]], // get current timezone
+                                                               @"date-updated": [NSNumber numberWithInt:0]}]; // add image
+            
+            
+            
+            
+//            [user sendEmailVerificationWithCompletion:^(NSError *_Nullable error) {
+//                if (error) {
+//                    // An error happened.
+//                    NSLog(@"=========> error happened sendEmailVerificationWithCompletion");
+//                } else {
+//                    // Email sent.
+//                    NSLog(@"=========> done  sendEmailVerificationWithCompletion");
+//                }
+//            }];
+//            
+            
+            
+            
             [self dismissModalStack];
         } else {
             UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];

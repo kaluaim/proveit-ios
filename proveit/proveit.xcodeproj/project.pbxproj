@@ -18,6 +18,12 @@
 		FA9119EB1DC5A08600CBC6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9119E91DC5A08600CBC6DD /* LaunchScreen.storyboard */; };
 		FA9119F31DC5A0E900CBC6DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */; };
 		FA9B343A1DCC570200CEEDE6 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34391DCC570200CEEDE6 /* SettingsVC.m */; };
+		FA9B343D1DCC835400CEEDE6 /* ProveitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B343C1DCC835400CEEDE6 /* ProveitVC.m */; };
+		FA9B34441DCC883900CEEDE6 /* ProveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34431DCC883900CEEDE6 /* ProveCell.m */; };
+		FA9B34461DCC884900CEEDE6 /* ProveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9B34451DCC884900CEEDE6 /* ProveCell.xib */; };
+		FA9B344A1DCC930300CEEDE6 /* Prove.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34491DCC930300CEEDE6 /* Prove.m */; };
+		FA9B344D1DCC9AF600CEEDE6 /* RequestProveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B344C1DCC9AF600CEEDE6 /* RequestProveVC.m */; };
+		FA9B34511DCDB7CF00CEEDE6 /* ProveitUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34501DCDB7CF00CEEDE6 /* ProveitUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,17 @@
 		FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA9B34381DCC570200CEEDE6 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
 		FA9B34391DCC570200CEEDE6 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		FA9B343B1DCC835400CEEDE6 /* ProveitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProveitVC.h; sourceTree = "<group>"; };
+		FA9B343C1DCC835400CEEDE6 /* ProveitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProveitVC.m; sourceTree = "<group>"; };
+		FA9B34421DCC883900CEEDE6 /* ProveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProveCell.h; sourceTree = "<group>"; };
+		FA9B34431DCC883900CEEDE6 /* ProveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProveCell.m; sourceTree = "<group>"; };
+		FA9B34451DCC884900CEEDE6 /* ProveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProveCell.xib; sourceTree = "<group>"; };
+		FA9B34481DCC930300CEEDE6 /* Prove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prove.h; sourceTree = "<group>"; };
+		FA9B34491DCC930300CEEDE6 /* Prove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prove.m; sourceTree = "<group>"; };
+		FA9B344B1DCC9AF600CEEDE6 /* RequestProveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestProveVC.h; sourceTree = "<group>"; };
+		FA9B344C1DCC9AF600CEEDE6 /* RequestProveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestProveVC.m; sourceTree = "<group>"; };
+		FA9B344F1DCDB7CF00CEEDE6 /* ProveitUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProveitUtilities.h; sourceTree = "<group>"; };
+		FA9B34501DCDB7CF00CEEDE6 /* ProveitUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProveitUtilities.m; sourceTree = "<group>"; };
 		FAB1BAAD1DC5A4A000EA5319 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -77,7 +94,7 @@
 		FA9119CF1DC5A08600CBC6DD = {
 			isa = PBXGroup;
 			children = (
-				FA9119DA1DC5A08600CBC6DD /* proveit */,
+				FA9119DA1DC5A08600CBC6DD /* Proveit */,
 				FA9119D91DC5A08600CBC6DD /* Products */,
 				839C3DB374555EE5B0CCA9AE /* Frameworks */,
 				D44931CE27E1BC73F5CF75E4 /* Pods */,
@@ -92,26 +109,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA9119DA1DC5A08600CBC6DD /* proveit */ = {
+		FA9119DA1DC5A08600CBC6DD /* Proveit */ = {
 			isa = PBXGroup;
 			children = (
+				FA9B344E1DCDB74D00CEEDE6 /* Utilities */,
+				FA9B34471DCC92E300CEEDE6 /* Models */,
+				FA9B34401DCC87FC00CEEDE6 /* Controllers */,
+				FA9B343F1DCC87E100CEEDE6 /* Views */,
 				FA9119DE1DC5A08600CBC6DD /* AppDelegate.h */,
 				FA9119DF1DC5A08600CBC6DD /* AppDelegate.m */,
-				FA659B991DC9BDA700D92E7D /* LaunchVC.h */,
-				FA659B9A1DC9BDA700D92E7D /* LaunchVC.m */,
-				FA9119E11DC5A08600CBC6DD /* LoginVC.h */,
-				FA9119E21DC5A08600CBC6DD /* LoginVC.m */,
-				FA659B961DC96D3400D92E7D /* RegisterVC.h */,
-				FA659B971DC96D3400D92E7D /* RegisterVC.m */,
-				FA9119E41DC5A08600CBC6DD /* Proveit.storyboard */,
 				FA9119E71DC5A08600CBC6DD /* Assets.xcassets */,
-				FA9119E91DC5A08600CBC6DD /* LaunchScreen.storyboard */,
 				FA9119EC1DC5A08600CBC6DD /* Info.plist */,
 				FA9119F21DC5A0E900CBC6DD /* GoogleService-Info.plist */,
 				FA9119DB1DC5A08600CBC6DD /* Supporting Files */,
-				FA9B34381DCC570200CEEDE6 /* SettingsVC.h */,
-				FA9B34391DCC570200CEEDE6 /* SettingsVC.m */,
 			);
+			name = Proveit;
 			path = proveit;
 			sourceTree = "<group>";
 		};
@@ -121,6 +133,63 @@
 				FA9119DC1DC5A08600CBC6DD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA9B343F1DCC87E100CEEDE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B34411DCC881800CEEDE6 /* Cells */,
+				FA9119E41DC5A08600CBC6DD /* Proveit.storyboard */,
+				FA9119E91DC5A08600CBC6DD /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FA9B34401DCC87FC00CEEDE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA659B991DC9BDA700D92E7D /* LaunchVC.h */,
+				FA659B9A1DC9BDA700D92E7D /* LaunchVC.m */,
+				FA9119E11DC5A08600CBC6DD /* LoginVC.h */,
+				FA9119E21DC5A08600CBC6DD /* LoginVC.m */,
+				FA659B961DC96D3400D92E7D /* RegisterVC.h */,
+				FA659B971DC96D3400D92E7D /* RegisterVC.m */,
+				FA9B34381DCC570200CEEDE6 /* SettingsVC.h */,
+				FA9B34391DCC570200CEEDE6 /* SettingsVC.m */,
+				FA9B343B1DCC835400CEEDE6 /* ProveitVC.h */,
+				FA9B343C1DCC835400CEEDE6 /* ProveitVC.m */,
+				FA9B344B1DCC9AF600CEEDE6 /* RequestProveVC.h */,
+				FA9B344C1DCC9AF600CEEDE6 /* RequestProveVC.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA9B34411DCC881800CEEDE6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B34421DCC883900CEEDE6 /* ProveCell.h */,
+				FA9B34431DCC883900CEEDE6 /* ProveCell.m */,
+				FA9B34451DCC884900CEEDE6 /* ProveCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FA9B34471DCC92E300CEEDE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B34481DCC930300CEEDE6 /* Prove.h */,
+				FA9B34491DCC930300CEEDE6 /* Prove.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA9B344E1DCDB74D00CEEDE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B344F1DCDB7CF00CEEDE6 /* ProveitUtilities.h */,
+				FA9B34501DCDB7CF00CEEDE6 /* ProveitUtilities.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +258,7 @@
 				FA9119F31DC5A0E900CBC6DD /* GoogleService-Info.plist in Resources */,
 				FA9119E81DC5A08600CBC6DD /* Assets.xcassets in Resources */,
 				FA9119E61DC5A08600CBC6DD /* Proveit.storyboard in Resources */,
+				FA9B34461DCC884900CEEDE6 /* ProveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,11 +317,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9B344A1DCC930300CEEDE6 /* Prove.m in Sources */,
+				FA9B344D1DCC9AF600CEEDE6 /* RequestProveVC.m in Sources */,
 				FA9119E31DC5A08600CBC6DD /* LoginVC.m in Sources */,
 				FA659B981DC96D3500D92E7D /* RegisterVC.m in Sources */,
+				FA9B34441DCC883900CEEDE6 /* ProveCell.m in Sources */,
 				FA9119E01DC5A08600CBC6DD /* AppDelegate.m in Sources */,
+				FA9B343D1DCC835400CEEDE6 /* ProveitVC.m in Sources */,
 				FA9119DD1DC5A08600CBC6DD /* main.m in Sources */,
 				FA659B9B1DC9BDA700D92E7D /* LaunchVC.m in Sources */,
+				FA9B34511DCDB7CF00CEEDE6 /* ProveitUtilities.m in Sources */,
 				FA9B343A1DCC570200CEEDE6 /* SettingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
