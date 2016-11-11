@@ -11,6 +11,25 @@
     // Override point for customization after application launch.
     [FIRApp configure];
     
+//    for (NSString *family in [UIFont familyNames]){
+//        NSLog(@"Family name: %@", family);
+//        for (NSString *fontName in [UIFont fontNamesForFamilyName:family]) {
+//            NSLog(@"    >Font name: %@", fontName);
+//        }
+//    }
+    
+    // NavigationBar
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.78 green:0.18 blue:0.56 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:@"ArialRoundedMTBold" size:20.0], NSFontAttributeName,nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.82 green:0.39 blue:0.65 alpha:1.0]];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    // TabBar
+    [[UITabBar appearance] setTintColor:[UIColor darkGrayColor]];
+    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTranslucent:NO];
+    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor lightGrayColor]];
+
     return YES;
 }
 

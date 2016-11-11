@@ -24,6 +24,8 @@
 		FA9B344A1DCC930300CEEDE6 /* Prove.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34491DCC930300CEEDE6 /* Prove.m */; };
 		FA9B344D1DCC9AF600CEEDE6 /* RequestProveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B344C1DCC9AF600CEEDE6 /* RequestProveVC.m */; };
 		FA9B34511DCDB7CF00CEEDE6 /* ProveitUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B34501DCDB7CF00CEEDE6 /* ProveitUtilities.m */; };
+		FAF2657D1DD401A8003B984B /* cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2657C1DD401A8003B984B /* cell2.xib */; };
+		FAF2657F1DD40490003B984B /* cell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2657E1DD40490003B984B /* cell3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		FA9B344F1DCDB7CF00CEEDE6 /* ProveitUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProveitUtilities.h; sourceTree = "<group>"; };
 		FA9B34501DCDB7CF00CEEDE6 /* ProveitUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProveitUtilities.m; sourceTree = "<group>"; };
 		FAB1BAAD1DC5A4A000EA5319 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FAF2657C1DD401A8003B984B /* cell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cell2.xib; sourceTree = "<group>"; };
+		FAF2657E1DD40490003B984B /* cell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cell3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				FA9B34421DCC883900CEEDE6 /* ProveCell.h */,
 				FA9B34431DCC883900CEEDE6 /* ProveCell.m */,
 				FA9B34451DCC884900CEEDE6 /* ProveCell.xib */,
+				FAF2657C1DD401A8003B984B /* cell2.xib */,
+				FAF2657E1DD40490003B984B /* cell3.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -254,8 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2657D1DD401A8003B984B /* cell2.xib in Resources */,
 				FA9119EB1DC5A08600CBC6DD /* LaunchScreen.storyboard in Resources */,
 				FA9119F31DC5A0E900CBC6DD /* GoogleService-Info.plist in Resources */,
+				FAF2657F1DD40490003B984B /* cell3.xib in Resources */,
 				FA9119E81DC5A08600CBC6DD /* Assets.xcassets in Resources */,
 				FA9119E61DC5A08600CBC6DD /* Proveit.storyboard in Resources */,
 				FA9B34461DCC884900CEEDE6 /* ProveCell.xib in Resources */,

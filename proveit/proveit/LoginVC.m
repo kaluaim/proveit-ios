@@ -1,4 +1,5 @@
 #import "LoginVC.h"
+#import <QuartzCore/QuartzCore.h>
 @import Firebase;
 //@import FirebaseAuth;
 //@import FirebaseAuthUI;
@@ -20,13 +21,14 @@
         // User is signed in.
         NSLog(@"--------------> user singed in: %@", user.email);
         // go to landing page
-        _logoutButton.hidden = NO;
         [self dismissModalStack];
     } else {
         // No user is signed in.
         NSLog(@"----------------> no user logeding");
-        _logoutButton.hidden = YES;
     }
+    
+    _loginButton.layer.cornerRadius = 5;
+    _loginButton.clipsToBounds = YES;
 
 }
 
@@ -42,7 +44,6 @@
     [[FIRAuth auth] signInWithEmail:_emailField.text password:_passwordField.text completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
         if (error == nil) {
             NSLog(@"=========> user logedin: %@", user.email);
-            _logoutButton.hidden = NO;
             [self dismissModalStack];
         } else {
             UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];

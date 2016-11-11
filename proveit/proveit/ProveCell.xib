@@ -6,28 +6,58 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="BiJ-jT-JZq" style="IBUITableViewCellStyleDefault" id="Dn7-fL-qdT" customClass="ProveCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="Dn7-fL-qdT" customClass="ProveCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dn7-fL-qdT" id="UeO-KA-0Q9">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="342" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BiJ-jT-JZq">
-                        <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-icon" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-ns-wxI">
+                        <rect key="frame" x="8" y="14" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="TE9-TA-hqc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibc-rS-FAC">
+                        <rect key="frame" x="66" y="14" width="267" height="30"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire after: 01h 26m 57s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PW-6k-KI9">
+                        <rect key="frame" x="66" y="52" width="267" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="TcD-3J-a5w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="jhW-ns-wxI" firstAttribute="top" secondItem="UeO-KA-0Q9" secondAttribute="topMargin" constant="6" id="0wS-Hj-Nea"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ibc-rS-FAC" secondAttribute="trailing" constant="1" id="2cv-Yn-OlZ"/>
+                    <constraint firstItem="jhW-ns-wxI" firstAttribute="bottom" secondItem="8PW-6k-KI9" secondAttribute="bottom" id="5Yy-eZ-efj"/>
+                    <constraint firstItem="jhW-ns-wxI" firstAttribute="top" secondItem="Ibc-rS-FAC" secondAttribute="top" id="IgM-92-UBn"/>
+                    <constraint firstItem="8PW-6k-KI9" firstAttribute="top" secondItem="Ibc-rS-FAC" secondAttribute="bottom" constant="8" symbolic="YES" id="Nv3-WG-OYi"/>
+                    <constraint firstItem="jhW-ns-wxI" firstAttribute="leading" secondItem="UeO-KA-0Q9" secondAttribute="leadingMargin" id="Nxl-yg-Pcs"/>
+                    <constraint firstItem="Ibc-rS-FAC" firstAttribute="leading" secondItem="jhW-ns-wxI" secondAttribute="trailing" constant="8" symbolic="YES" id="O7a-Kk-gKR"/>
+                    <constraint firstItem="jhW-ns-wxI" firstAttribute="centerY" secondItem="UeO-KA-0Q9" secondAttribute="centerY" id="SUk-Z0-1TM"/>
+                    <constraint firstItem="Ibc-rS-FAC" firstAttribute="trailing" secondItem="8PW-6k-KI9" secondAttribute="trailing" id="elj-a4-8fn"/>
+                    <constraint firstItem="Ibc-rS-FAC" firstAttribute="leading" secondItem="8PW-6k-KI9" secondAttribute="leading" id="ilD-Ug-lGS"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-338" y="45"/>
+            <point key="canvasLocation" x="-338.5" y="63"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="location-icon" width="42" height="64"/>
+    </resources>
 </document>

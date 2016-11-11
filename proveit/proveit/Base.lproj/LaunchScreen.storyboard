@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +22,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIe-3r-ehU">
-                                <rect key="frame" x="75" y="285" width="224" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="QTS-nq-skY"/>
-                                    <constraint firstAttribute="width" constant="224" id="q3o-YW-4aD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
-                                <color key="textColor" red="1" green="0.0099468241871529806" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proo" translatesAutoresizingMaskIntoConstraints="NO" id="Mr3-rQ-Wvs">
+                                <rect key="frame" x="67" y="118" width="240" height="430"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CIe-3r-ehU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FUq-Kz-6hX"/>
-                            <constraint firstItem="CIe-3r-ehU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i23-Jo-nCJ"/>
+                            <constraint firstItem="Mr3-rQ-Wvs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1dq-mK-7U9"/>
+                            <constraint firstItem="Mr3-rQ-Wvs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="51" id="dDU-qi-3fn"/>
+                            <constraint firstItem="Mr3-rQ-Wvs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="98" id="mQp-fr-yww"/>
+                            <constraint firstItem="Mr3-rQ-Wvs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nqM-dj-ZvU"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,4 +40,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="proo" width="750" height="1750"/>
+    </resources>
 </document>

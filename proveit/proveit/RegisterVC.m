@@ -24,6 +24,8 @@
         NSLog(@"----------------> no user logeding");
     }
 
+    _registerButton.layer.cornerRadius = 5;
+    _registerButton.clipsToBounds = YES;
 }
 
 - (IBAction)doRegister {
