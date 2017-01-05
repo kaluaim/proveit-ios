@@ -520,7 +520,7 @@
                     <navigationItem key="navigationItem" id="YIa-tt-FvA">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="m5s-AW-LSJ">
-                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="" image="google.png"/>
@@ -576,7 +576,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AyI-O3-OCN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History" image="history-tab" id="nod-H5-PxV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="F2L-cu-gwL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F2L-cu-gwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -595,7 +595,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2gX-Yr-VWB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Proveit" image="proveit-tab" id="H5N-dt-VN2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7Pi-bp-dML">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Pi-bp-dML">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -614,7 +614,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceN-Sb-WMt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="user" image="user-tab" id="LfZ-iW-0wq"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ag0-iI-Sd2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ag0-iI-Sd2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -632,7 +632,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1xJ-GZ-dgS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O0n-dk-Zm1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O0n-dk-Zm1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -650,7 +650,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8HL-jm-kEY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rVk-FS-vII">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rVk-FS-vII">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
